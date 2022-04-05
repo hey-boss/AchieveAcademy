@@ -1,3 +1,4 @@
+var ghPages = require('gulp-gh-pages');
 var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     concat = require('gulp-concat'),
@@ -54,10 +55,9 @@ var gulp = require('gulp'),
     //       .pipe(gulp.dest(PATHS.dist));
     //   });
       
-var deploy = require('gulp-gh-pages');
 gulp.task('deploy', function () {
-    return gulp.src("./dist/**/*")
-        .pipe(deploy())
+    return gulp.src("./dest/**/*")
+        .pipe(ghPages())
     });
     
 gulp.task('style', function (done) {
