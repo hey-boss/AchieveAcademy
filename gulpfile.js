@@ -54,7 +54,12 @@ var gulp = require('gulp'),
     //       .pipe(gulp.dest(PATHS.dist));
     //   });
       
-
+var deploy = require('gulp-gh-pages');
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+        .pipe(deploy())
+    });
+    
 gulp.task('style', function (done) {
     gulp.src(PATHS.scss)
     .pipe(postcss([tailwindcss(PATHS.config), require("autoprefixer")]))
