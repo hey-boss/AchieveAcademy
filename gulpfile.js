@@ -1,4 +1,3 @@
-var ghPages = require('gulp-gh-pages');
 var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     concat = require('gulp-concat'),
@@ -55,6 +54,8 @@ var gulp = require('gulp'),
     //       .pipe(gulp.dest(PATHS.dist));
     //   });
       
+var ghPages = require('gulp-gh-pages');
+
 gulp.task('deploy', function () {
     return gulp.src("./dest/**/*")
         .pipe(ghPages())

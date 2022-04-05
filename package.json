@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "prestart": "rimraf dest",
-    "deploy:gh": "gulp deploy",
+    "deploy:gh": "rm -rf ./.publish & gulp deploy",
     "start": "gulp"
   },
   "author": "Hastech",
