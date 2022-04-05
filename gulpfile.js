@@ -55,7 +55,12 @@ var gulp = require('gulp'),
     //   });
       
 var ghPages = require('gulp-gh-pages');
+var clean = require('gulp-clean');
 
+gulp.task('clean', function () {
+    return gulp.src('./.publish', {read: false})
+        .pipe(clean());
+});
 gulp.task('deploy', function () {
     return gulp.src("./dest/**/*")
         .pipe(ghPages())
