@@ -61,9 +61,9 @@ module.exports = {
           },
         ],
         "2xl": [
-          "68px",
+          "55px",
           {
-            lineHeight: "1.1764",
+            lineHeight: "1.3",
           },
         ],
       },
