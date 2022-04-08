@@ -1,6 +1,5 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Bery-Real Estate Listing Template
 
     Version: 1.0
 
@@ -776,16 +775,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: -1;
 }
 
+.order-first {
+  order: -9999;
+}
+
 .order-last {
   order: 9999;
 }
 
 .order-2 {
   order: 2;
-}
-
-.order-first {
-  order: -9999;
 }
 
 .col-span-12 {
@@ -804,20 +803,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 2/span 2;
 }
 
-.col-span-1 {
-  grid-column: span 1/span 1;
-}
-
 .col-span-4 {
   grid-column: span 4/span 4;
 }
 
 .col-span-8 {
   grid-column: span 8/span 8;
-}
-
-.col-span-3 {
-  grid-column: span 3/span 3;
 }
 
 .-m-\[25px\] {
@@ -1070,10 +1061,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 20px;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .ml-\[10px\] {
   margin-left: 10px;
 }
@@ -1144,6 +1131,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-mb-\[30px\] {
   margin-bottom: -30px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mb-8 {
@@ -1230,10 +1221,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 100px;
 }
 
-.mb-\[16px\] {
-  margin-bottom: 16px;
-}
-
 .block {
   display: block;
 }
@@ -1298,12 +1285,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 196px;
 }
 
-.h-\[385px\] {
-  height: 385px;
-}
-
 .h-\[360px\] {
   height: 360px;
+}
+
+.h-\[385px\] {
+  height: 385px;
 }
 
 .h-\[60px\] {
@@ -1450,6 +1437,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 600px;
 }
 
+.max-w-\[550px\] {
+  max-width: 550px;
+}
+
 .max-w-\[80px\] {
   max-width: 80px;
 }
@@ -1462,8 +1453,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 180px;
 }
 
-.max-w-\[270px\] {
-  max-width: 270px;
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 
 .max-w-\[560px\] {
@@ -1484,22 +1475,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[100\%\] {
   max-width: 100%;
-}
-
-.max-w-\[450px\] {
-  max-width: 450px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
-}
-
-.max-w-\[550px\] {
-  max-width: 550px;
 }
 
 .flex-1 {
@@ -2436,10 +2411,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs {
   font-size: 14px;
   line-height: 1;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
 }
 
 .font-light {
@@ -4736,14 +4707,6 @@ input:focus {
     margin-left: auto;
   }
 
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-\[550px\] {
     height: 550px;
   }
@@ -4905,12 +4868,12 @@ input:focus {
     right: 80px;
   }
 
-  .lg\:order-none {
-    order: 0;
-  }
-
   .lg\:order-last {
     order: 9999;
+  }
+
+  .lg\:order-none {
+    order: 0;
   }
 
   .lg\:col-span-5 {
@@ -4935,14 +4898,6 @@ input:focus {
 
   .lg\:col-span-8 {
     grid-column: span 8/span 8;
-  }
-
-  .lg\:col-span-2 {
-    grid-column: span 2/span 2;
-  }
-
-  .lg\:col-span-1 {
-    grid-column: span 1/span 1;
   }
 
   .lg\:mb-\[50px\] {
@@ -5009,6 +4964,10 @@ input:focus {
     margin-bottom: 30px;
   }
 
+  .lg\:mb-\[10px\] {
+    margin-bottom: 10px;
+  }
+
   .lg\:mb-\[75px\] {
     margin-bottom: 75px;
   }
@@ -5023,14 +4982,6 @@ input:focus {
 
   .lg\:mr-\[30px\] {
     margin-right: 30px;
-  }
-
-  .lg\:mb-\[20px\] {
-    margin-bottom: 20px;
-  }
-
-  .lg\:mb-\[10px\] {
-    margin-bottom: 10px;
   }
 
   .lg\:flex {
@@ -5235,6 +5186,14 @@ input:focus {
     padding-bottom: 300px;
   }
 
+  .lg\:pt-\[150px\] {
+    padding-top: 150px;
+  }
+
+  .lg\:pb-\[100px\] {
+    padding-bottom: 100px;
+  }
+
   .lg\:pt-\[80px\] {
     padding-top: 80px;
   }
@@ -5245,14 +5204,6 @@ input:focus {
 
   .lg\:pb-\[0px\] {
     padding-bottom: 0px;
-  }
-
-  .lg\:pt-\[150px\] {
-    padding-top: 150px;
-  }
-
-  .lg\:pb-\[100px\] {
-    padding-bottom: 100px;
   }
 
   .lg\:text-\[50px\] {
@@ -5395,10 +5346,6 @@ input:focus {
     margin-right: 40px;
   }
 
-  .xl\:ml-\[40px\] {
-    margin-left: 40px;
-  }
-
   .xl\:mr-\[50px\] {
     margin-right: 50px;
   }
@@ -5411,12 +5358,12 @@ input:focus {
     margin-right: 120px;
   }
 
-  .xl\:mb-\[40px\] {
-    margin-bottom: 40px;
+  .xl\:ml-\[40px\] {
+    margin-left: 40px;
   }
 
-  .xl\:mr-\[20px\] {
-    margin-right: 20px;
+  .xl\:mb-\[40px\] {
+    margin-bottom: 40px;
   }
 
   .xl\:mb-\[10px\] {
@@ -5551,10 +5498,6 @@ input:focus {
     padding: 30px;
   }
 
-  .xl\:p-\[20px\] {
-    padding: 20px;
-  }
-
   .xl\:px-\[50px\] {
     padding-left: 50px;
     padding-right: 50px;
@@ -5586,10 +5529,6 @@ input:focus {
 
   .xl\:pl-\[40px\] {
     padding-left: 40px;
-  }
-
-  .xl\:pl-\[65px\] {
-    padding-left: 65px;
   }
 
   .xl\:pr-\[20px\] {
